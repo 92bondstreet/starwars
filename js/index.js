@@ -34,3 +34,25 @@ var quotes = [{
   'author': '- Darth Vader',
   'quote': 'The Force is strong with this one.'
 }];
+
+
+
+var quote = quotes[Math.floor(Math.random()*quotes.length)];
+
+ReactDOM.render(
+React.createElement('h2', null, quote.quote),
+document.getElementById("quote")
+);
+
+var author = quotes[Math.floor(Math.random()*quotes.length)];
+
+ReactDOM.render(
+React.createElement('h2', null, author.author),
+document.getElementById("authors")
+);
+
+
+
+
+
+
